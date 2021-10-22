@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ataque dos Fastasmas</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#" class="ativa">Home</a></li>
+        <li><a href="jogo.html">Jogo</a></li>
+        <li><a href="https://arcade.makecode.com/_30xUF9V47HwK">Obter Código-Fonte</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Ataque dos Fantasmas</h1>
+    <img class="image-left" src="img/demo.png" width="300px" alt="Demonstração do jogo">
+    <p>
+      Em uma floresta chuvosa, nossos heróis se encontram perdidos e sem uma forma de se defenderem quando percebem que
+      uma horda enorme de fantasmas os cercaram e a única opção que têm é desviar deles pelo máximo de tempo que
+      conseguirem.
+      Ataque dos fantasmas é um jogo desenvolvido durante as aulas da oficina de javascript em 2021 no CEMEB e tem como
+      objetivo, sobreviver pelo máximo de tempo possível enquanto desvia dos fantasmas que surgem de ambos os lados. A
+      cada
+      fantasma que passa, o jogador ganha uma pontuação e, quando capturado por um fantasma, será exibida a pontuação
+      máxima que já foi feita no jogo, assim como a pontuação obtida na partida. O jogo pode ser jogado por até 2
+      pessoas e acaba sempre que ambos os jogadores são capturados.
+    </p>
+    <p>
+      Para jogar agora, pode-se utilizar este <a href="jogo.html">link</a> ou o link existente na barra de navegação do
+      site. Você consegue obter uma nova pontuação máxima? &#128518;
+    </p>
+
+    <h2>Controles</h2>
+    <p>
+      Para a movimentação do jogador 1, podemos utilizar as setas do arcade mostrado na tela para movimentar para os
+      lados e para pular. Já para o jogador 2, apenas por meio do teclado é possível a movimentação. O jogador 1 também
+      pode ser movimentado por meio do teclado. O mapeamento das teclas para cada um dos jogadores é feito conforme a
+      tabela abaixo:
+    </p>
+    <h2 class="skip-image title-center">Tabela de Controles</h2>
+    <table id="tabela-controles">
+      <tr>
+        <th>Descrição</th>
+        <th>Tecla</th>
+      </tr>
+      <tr>
+        <td>Movimentar Jogador 1 para a esquerda</td>
+        <td>&larr; ou <b>A</b></td>
+      </tr>
+      <tr>
+        <td>Movimentar Jogador 1 para a direita</td>
+        <td>&rarr; ou <b>D</b></td>
+      </tr>
+      <tr>
+        <td>Jogador 1 pula</td>
+        <td>&uarr; ou <b>W</b></td>
+      </tr>
+      <tr>
+        <td>Movimentar Jogador 2 para a esquerda</td>
+        <td><b>J</b></td>
+      </tr>
+      <tr>
+        <td>Movimentar Jogador 2 para a direita</td>
+        <td><b>L</b></td>
+      </tr>
+      <tr>
+        <td>Jogador 2 pula</td>
+        <td><b>I</b></td>
+      </tr>
+    </table>
+    <h2>Aspectos Técnicos</h2>
+    <p>
+      O Jogo foi desenvolvido usando a plataforma <a href="https://arcade.makecode.com/">Microsoft Makecode Arcade</a>,
+      onde é possível criar jogos utilizando uma ferramenta de programação em blocos, javascript, ou python. O código
+      modificável para o projeto em si pode ser obtido aqui:
+      <a href="https://arcade.makecode.com/#pub:08161-62929-65111-43073">Link</a>.
+    </p>
+    <img class="image-right" src="img/code.png" alt="Código em blocos" width="500px">
+    <p>
+      Durante o desenvolvimento do jogo, todo o conhecimento adquirido durante o curso foi usado, incluindo desde os
+      mais básicos até os mais avançados como variáveis, operações, condicionais, decisão, loops e funções. Na imagem ao
+      lado, podemos ver que existem 4 funções, que são de criar um pingo da chuva que tem no jogo, criar um jogador,
+      criar um inimigo e a função que faz um jogador pular. 
+    </p>
+    <p>
+      Durante a criação dos inimigos, uma velocidade aleatória é atribuída a ele e o lado que o inimigo vem também é definido aleatoriamente. Desta forma, o jogo não fica sempre a mesma coisa e depende um pouco da "sorte".
+    </p>
+    <h3>Valores</h3>
+    <ul class="lista-valores">
+      <li>Os jogadores se movem com velocidade 100</li>
+      <li>Os inimigos se movem com velocidade que varia aleatoriamente entre 50 e 100</li>
+      <li>Um inimigo é gerado a cada 1 segundo</li>
+      <li>A cada vez que um inimigo sai da tela, ele é auto-destruído e os jogadores ganham 100 pontos</li>
+    </ul>
+    <h2>Vídeo Demonstrativo</h2>
+    <video src="video/demo.mp4" width="50%" controls></video>
+    <br>
+    <br>
+    <br>
+    <button class="jogar" onclick="location.href='jogo.html'">Jogar agora</button>
+  </main>
+  <footer>
+    <table class="foot">
+      <tr>
+        <td>
+          <img src="img/unb.png" height="50px">
+          <img src="img/cemeb.png" height="50px">
+        </td>
+        <td>
+          <a href="https://github.com/Pedenite/publicacao-jogo-oficina-javascript"><img src="img/github.svg" height="50px" alt="Veja o código-fonte da página"></a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Desenvolvido em HTML, CSS e javascript
+        </td>
+        <td>Todos os códigos podem ser usados livremente</td>
+      </tr>
+      <tr>
+        <td>
+          Jogo desenvolvido usando o microsoft makecode arcade
+        </td>
+        <td>
+          Licenciado sobre o MIT
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr></td>
+      </tr>
+      <tr>
+        <td>
+          2021 Pedro Agnes e Victor Sousa
+        </td>
+      </tr>
+      <tr>
+        <td>pedro.agnes@aluno.unb.br</td>
+        <td>rego.victor@aluno.unb.br</td>
+      </tr>
+    </table>
+  </footer>
+</body>
+
+</html>
